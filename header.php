@@ -44,11 +44,9 @@
 	<nav class="top-bar" data-topbar>
 	    <ul class="title-area">
 	        <li class="name">
-	        	<h1>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                        <img src="<?php bloginfo('template_url'); ?>/images/logo-afabra.png" alt="Afabra formations">
                     </a>
-                </h1>
 	        </li>
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -89,7 +87,9 @@
 	</nav>
 	<!-- End of Top-Bar -->
 </header>
-
+<!--slider-->
+    <ul class="example-orbit-content" data-orbit> <li data-orbit-slide="headline-1"> <div> <h2>Headline 1</h2> <h3>Subheadline</h3> </div> </li> <li data-orbit-slide="headline-2"> <div> <h2>Headline 2</h2> <h3>Subheadline</h3> </div> </li> <li data-orbit-slide="headline-3"> <div> <h2>Headline 3</h2> <h3>Subheadline</h3> </div> </li> </ul>
+<!--/slider-->
 <!-- Start the main container -->
 <div class="container" role="document">
 	<div class="row">
