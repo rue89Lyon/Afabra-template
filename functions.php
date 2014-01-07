@@ -32,10 +32,10 @@ require_once('lib/foundation.php'); // load Foundation specific functions like t
 */
 require_once('lib/nav.php'); // filter default wordpress menu classes and clean wp_nav_menu markup
 /*
-5. lib/presstrends.php
-    - add PressTrends, tracks how many people are using Reverie
+5. lib/cpttemoignage.php
+    - add custom post type temoignage
 */
-require_once('lib/presstrends.php'); // load PressTrends to track the usage of Reverie across the web, comment this line if you don't want to be tracked
+require_once('lib/cpttemoignage.php'); 
 
 /**********************
 Add theme supports

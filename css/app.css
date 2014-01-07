@@ -5396,6 +5396,7 @@ meta.foundation-mq-topbar {
 .fixed.expanded:not(.top-bar) .top-bar-section {
   z-index: 98;
   margin-top: 45px;
+
 }
 
 .top-bar {
@@ -5434,9 +5435,9 @@ meta.foundation-mq-topbar {
   margin: 0;
 }
 .top-bar .name {
-  height: 45px;
+  height: 80px;
   margin: 0;
-  font-size: 16px;
+/*  font-size: 16px;*/
 }
 .top-bar .name h1 {
   line-height: 45px;
@@ -5516,7 +5517,7 @@ meta.foundation-mq-topbar {
   width: 100%;
   height: auto;
   display: block;
-  background: #333333;
+/*  background: #333333;*/
   font-size: 16px;
   margin: 0;
 }
@@ -5536,7 +5537,7 @@ meta.foundation-mq-topbar {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
-  background: #333333;
+/*  background: #333333;*/
 }
 .top-bar-section ul li > a.button {
   background: #008cba;
@@ -5588,8 +5589,10 @@ meta.foundation-mq-topbar {
   width: 0;
   height: 0;
   border: inset 5px;
+/*
   border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
   border-left-style: solid;
+*/
   margin-right: 15px;
   margin-top: -4.5px;
   position: absolute;
@@ -5643,9 +5646,10 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #333333;
+    background: #76C7C0;
     *zoom: 1;
     overflow: visible;
+        height:80px;
   }
   .top-bar:before, .top-bar:after {
     content: " ";
@@ -5670,7 +5674,7 @@ meta.foundation-mq-topbar {
     top: 7px;
   }
   .top-bar.expanded {
-    background: #333333;
+    background: #76C7C0;
   }
 
   .contain-to-grid .top-bar {
@@ -5684,6 +5688,7 @@ meta.foundation-mq-topbar {
     -moz-transition: none 0 0;
     transition: none 0 0;
     left: 0 !important;
+        margin:20px 0 0 0;
   }
   .top-bar-section ul {
     width: auto;
@@ -5703,10 +5708,9 @@ meta.foundation-mq-topbar {
   .top-bar-section li a:not(.button) {
     padding: 0 15px;
     line-height: 45px;
-    background: #333333;
   }
   .top-bar-section li a:not(.button):hover {
-    background: #272727;
+    background: #F60;
   }
   .top-bar-section .has-dropdown > a {
     padding-right: 35px !important;
@@ -5762,7 +5766,7 @@ meta.foundation-mq-topbar {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
-    border-right: solid 1px #4d4d4d;
+/*    border-right: solid 1px #4d4d4d;*/
     clear: none;
     height: 45px;
     width: 0;
