@@ -87,9 +87,40 @@
 	</nav>
 	<!-- End of Top-Bar -->
 </header>
-<!--slider-->
-    <ul class="example-orbit-content" data-orbit> <li data-orbit-slide="headline-1"> <div> <h2>Headline 1</h2> <h3>Subheadline</h3> </div> </li> <li data-orbit-slide="headline-2"> <div> <h2>Headline 2</h2> <h3>Subheadline</h3> </div> </li> <li data-orbit-slide="headline-3"> <div> <h2>Headline 3</h2> <h3>Subheadline</h3> </div> </li> </ul>
-<!--/slider-->
 <!-- Start the main container -->
 <div class="container" role="document">
+    <!--slider-->
+    <div class="row">
+        <div class="small-12 large-12 columns">
+            <ul class="example-orbit-content" data-orbit
+                    data-options="animation:slide;
+                    animation_speed:1000;
+                    pause_on_hover:true;
+                    animation_speed:500;
+                    navigation_arrows:true;
+                    bullets:false;
+                    next_on_click:true;
+                    slide_number: false;"> 
+                <li data-orbit-slide="headline-1"> 
+                        <img src="<?php bloginfo('template_url'); ?>/images/slider.jpg" alt="Afabra" />
+                    <div class="orbit-caption">
+                        text
+                    </div> 
+                </li> 
+                <li data-orbit-slide="headline-1"> 
+                        <img src="<?php bloginfo('template_url'); ?>/images/slider.jpg" alt="Afabra" />
+                    <div class="orbit-caption">
+                        text
+                    </div> 
+                </li>
+                <li data-orbit-slide="headline-1"> 
+                        <img src="<?php bloginfo('template_url'); ?>/images/slider.jpg" alt="Afabra" />
+                    <div class="orbit-caption">
+                        text
+                    </div> 
+                </li> 
+            </ul>
+        </div>
+    </div>
+    <!--/slider-->
 	<div class="row">

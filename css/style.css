@@ -1,4 +1,3 @@
-@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 /* Welcome and glad you are using Reverie.
  * This is the main stylesheet loaded by default.
  * Edit the file and have fun.
@@ -42,11 +41,11 @@ body {
 }
 
 body {
-  background: #f7f7f7;
+/*  background: #f7f7f7;*/
   color: #444444;
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "arial";
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -265,14 +264,14 @@ figure.alignleft.figure {
 }
 
 body > header.contain-to-grid {
-  margin-bottom: 2rem;
+/*  margin-bottom: 2rem;*/
   max-width: 100%;
   padding-bottom: 0;
 }
 
 #content {
   background-color: #fff;
-  border: 1px solid #ddd;
+/*  border: 1px solid #ddd;*/
 }
 
 .index-card {
