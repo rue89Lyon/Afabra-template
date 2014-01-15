@@ -92,34 +92,38 @@
     <!--slider-->
     <div class="row">
         <div class="small-12 large-12 columns">
-            <ul class="example-orbit-content" data-orbit
-                    data-options="animation:slide;
-                    animation_speed:1000;
-                    pause_on_hover:true;
-                    animation_speed:500;
-                    navigation_arrows:true;
-                    bullets:false;
-                    next_on_click:true;
-                    slide_number: false;"> 
-                <li data-orbit-slide="headline-1"> 
-                        <img src="<?php bloginfo('template_url'); ?>/images/slider.jpg" alt="Afabra" />
-                    <div class="orbit-caption">
-                        text
-                    </div> 
-                </li> 
-                <li data-orbit-slide="headline-1"> 
-                        <img src="<?php bloginfo('template_url'); ?>/images/slider.jpg" alt="Afabra" />
-                    <div class="orbit-caption">
-                        text
-                    </div> 
-                </li>
-                <li data-orbit-slide="headline-1"> 
-                        <img src="<?php bloginfo('template_url'); ?>/images/slider.jpg" alt="Afabra" />
-                    <div class="orbit-caption">
-                        text
-                    </div> 
-                </li> 
-            </ul>
+            <!--slider-->
+            <div id="slider">
+   <div id="prevSlide">
+      <img src="previous.jpg" />
+   </div>
+
+   <div id="slider-window">
+      <ul id="slides">
+         <?php
+                $the_query = new WP_Query( array( 'post_type' => 'temoignage' ) );
+                while ($the_query->have_posts()) : 
+                $the_query->the_post();
+            ?>
+            <li>
+               <img src="<?php echo get_post_meta($post->ID, 'thumb', true) ?>" />
+               <div>
+                  <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+                  
+               </div>
+            </li>
+         <?php endwhile;
+         wp_reset_query();?>
+      </ul>
+   </div><!-- #slider-window -->
+                
+                
+
+   <div id="nextSlide">
+      <img src="next.jpg" />
+   </div>
+</div><!-- #slider -->
+            <!--/slider-->
         </div>
     </div>
     <!--/slider-->

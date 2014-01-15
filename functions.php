@@ -31,12 +31,32 @@ require_once('lib/foundation.php'); // load Foundation specific functions like t
 	- custom walker for top-bar and related
 */
 require_once('lib/nav.php'); // filter default wordpress menu classes and clean wp_nav_menu markup
+/*CPT*/
 /*
-5. lib/cpttemoignage.php
+1. lib/cptindex.php
+    - add custom post type index
+*/
+require_once('lib/cptindex.php');
+/*
+2. lib/cptactu.php
+    - add custom post type actu
+*/
+require_once('lib/cptactu.php');
+/*
+3. lib/cptvideo.php
+    - add custom post type video
+*/
+require_once('lib/cptvideo.php');
+/*
+4. lib/cpttemoignage.php
     - add custom post type temoignage
 */
-require_once('lib/cpttemoignage.php'); 
-
+require_once('lib/cpttemoignage.php');
+/*ADMIN*/
+/*1. lib/admin.php
+    - hack function admin
+*/
+//require_once('lib/adminhack.php');
 /**********************
 Add theme supports
  **********************/
@@ -99,7 +119,16 @@ foreach ($sidebars as $sidebar) {
         'after_title' => '</h4>'
     ));
 }
-
+$sidebars = array('Liens');
+foreach ($sidebars as $sidebar) {
+    register_sidebar(array('name'=> $sidebar,
+    	'id' => 'Liens',
+        'before_widget' => '<div class="large-4 columns"><article id="%1$s" class="panel widget %2$s">',
+        'after_widget' => '</article></div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    ));
+}
 // return entry meta information for posts, used by multiple loops.
 if(!function_exists('reverie_entry_meta')) :
     function reverie_entry_meta() {
@@ -107,4 +136,10 @@ if(!function_exists('reverie_entry_meta')) :
         echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. get_the_time('F jS, Y') .'</time>';
     }
 endif;
+
+// Fonction qui insere le lien vers le css qui surchargera celui d'origine
+function custom_login_css() {
+echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/design/style-login.css" />';
+}
+add_action('login_head', 'custom_login_css');
 ?>

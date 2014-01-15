@@ -260,7 +260,8 @@ figure.alignleft.figure {
 }
 
 .footer-widget {
-  background-color: #eee;
+  background-color: #76C7C0;
+    padding-bottom:30px;
 }
 
 body > header.contain-to-grid {

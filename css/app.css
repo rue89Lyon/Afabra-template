@@ -2415,11 +2415,11 @@ button.small, .button.small {
   /*     @else                            { font-size: $padding - rem-calc(2); } */
 }
 button.tiny, .button.tiny {
-  padding-top: 0.625rem;
-  padding-right: 1.25rem;
-  padding-bottom: 0.6875rem;
-  padding-left: 1.25rem;
-  font-size: 0.6875rem;
+  padding-top: 0.325rem;
+  padding-right: 1rem;
+  padding-bottom: 0.3875rem;
+  padding-left: 1rem;
+  font-size: 0.8875rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
 }
 button.expand, .button.expand {
@@ -5006,7 +5006,7 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008cba;
+  color: #ff6600;
   text-decoration: none;
   line-height: inherit;
 }
@@ -5526,7 +5526,7 @@ meta.foundation-mq-topbar {
   color: white;
   padding: 12px 0 12px 0;
   padding-left: 15px;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   font-weight: normal;
 /*  background: #333333;*/
 }
@@ -6619,6 +6619,13 @@ header .logo {
 .backgrd-orange{
     background-color:#FF6600;
 }
+/*menu*/
+.btn-menu{
+    font-size:1.4rem;
+}
+.btn-fb-menu{
+    background-color:#44619D; 
+}
 /*pro forme area*/
 .pro-forme-area{
     padding:15px 10px 0 10px;
@@ -6641,7 +6648,35 @@ header .logo {
     text-transform:uppercase;
 }
 /*actu and video area*/
-.actu-video-area{
-    margin:20px 0 20px 0;
-    padding:20px 20px 20xp 20px;
+.area-actu-video{
+    padding:20px 20px 20px 40px;
+}
+.title-actu-video {
+    font-size:2rem;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.area-actu-video p{
+    font-weight:bold;
+    line-height:1rem;
+}
+/*footer*/
+.footer-widget h1{
+    font-size:1.6rem;
+    font-weight:bold;
+    color:white;
+    text-transform:uppercase;
+    
+}
+#text-2{
+    background-color:red;
+    margin:0 0;
+    padding:10px 5px 10px 5px;
+    width:100%;
+}
+.lien-footer-area {
+    line-height:1rem;
+}
+footer a {
+    color:#FF6600;
 }
