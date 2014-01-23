@@ -52,6 +52,21 @@ require_once('lib/cptvideo.php');
     - add custom post type temoignage
 */
 require_once('lib/cpttemoignage.php');
+/*
+5. lib/cptslider.php
+    - add custom post type slider
+*/
+require_once('lib/cptslider.php');
+/*
+6. lib/cptslider.php
+    - add custom post type formation à la une
+*/
+require_once('lib/cptformationalaune.php');
+/*
+7. lib/cptslider.php
+    - add custom post type financement
+*/
+require_once('lib/cptfinancement.php');
 /*ADMIN*/
 /*1. lib/admin.php
     - hack function admin

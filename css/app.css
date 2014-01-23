@@ -4130,7 +4130,7 @@ ul.pagination li {
   margin-bottom: 0.625rem;
 }
 .panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
-  line-height: 1.4;
+  line-height: 1;
 }
 .panel.callout {
   border-style: solid;
@@ -5023,7 +5023,7 @@ p {
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+/*  margin-bottom: 1.25rem;*/
   text-rendering: optimizeLegibility;
 }
 p aside {
@@ -5038,9 +5038,11 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
+/*
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   line-height: 1.4;
+*/
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
@@ -6680,3 +6682,6 @@ header .logo {
 footer a {
     color:#FF6600;
 }
+/*page 2 colonnes*/
+    .cb {clear:both;}
+    .post-preview {float:left;margin-left:40px;width: 290px;}

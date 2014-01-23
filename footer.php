@@ -15,6 +15,7 @@
         <div class="small-4 large-4 columns">
         <h1>Nous contacter</h1>
             <?php the_field('nous_contacter'); ?>
+            <br />
             <a href="#" class="button backgrd-orange ">Trouver votre contact en cliquant ici</a>
         </div>
         <div class="small-4 large-4 columns">
@@ -25,24 +26,20 @@
         ?>
 	</div>
 </div>
-
 <footer class="full-width" role="contentinfo">
 	<div class="row love-reverie">
 		<div class="large-12 columns">
 			<p>
-                &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
+            &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
             </p>
 		</div>
 	</div>
 </footer>
-
 <?php wp_footer(); ?>
-
 <script>
 	(function($) {
 		$(document).foundation();
 	})(jQuery);
 </script>
-	
 </body>
 </html>
